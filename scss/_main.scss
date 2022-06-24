@@ -1,0 +1,43 @@
+// -- ---EMPIEZA PRODUCTOS-- --- //
+.producto{
+	@include sizes (475px,600px);
+	margin-bottom: 20px;
+	transition: all 100ms ease;
+	&:hover{
+		border: 4px solid $color-principal;
+		opacity: 0.95;
+	}
+	a{
+		img{
+			width: 100%;
+		}
+	}
+	.nombre {
+		@include descripcion-producto;
+	}
+	.precio {
+		@include descripcion-producto;
+	    letter-spacing: 10px;
+		margin-top: 25px;
+	}
+
+}
+
+.producto:hover > .nombre {
+	opacity: $mostrar;
+}
+
+.producto:hover > .precio {
+	@extend.nombre;
+}
+
+.compra-ahora {
+	margin-top: 50px;
+}
+
+.col-auto {
+	margin-top: 40px;
+}
+
+
+// -- ---TERMINA PRODUCTOS-- --- //

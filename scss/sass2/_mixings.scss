@@ -1,0 +1,70 @@
+@mixin descripcion-producto {
+	color: $color-secundario;
+    font-family: $fuente-secundaria;
+	font-size: 16px;
+	font-weight: 600;
+	opacity: 0;
+}
+
+@mixin boton-compra {
+	color: $color-secundario;
+	text-decoration: none;
+	background: $color-principal;
+	font-family: inherit;
+	font-weight: 900;
+	font-size: 16px;
+	padding: 0.6em 1.3em;
+	border: 3px solid $color-secundario;
+	border-radius: 0.4em;
+	box-shadow: 0.1em 0.1em;
+}
+
+@mixin enviar {
+	background: $color-tercero;
+	color: $blanco;
+	border: 1px solid $color-secundario;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	bottom: 1px;
+}
+@mixin agregar {
+	padding: 0.8em 1.8em;
+	border: 3px solid $color-principal;
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	transition: .3s;
+	z-index: 1;
+	font-family: inherit;
+	color: $color-secundario;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+
+@mixin animacion-boton {
+	content: '';
+		width: 0;
+		height: 300%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		background: $color-principal;
+		transition: .5s ease;
+		display: block;
+		z-index: -1;
+}
+
+@mixin sizes ($width,$height){
+	width: $width;
+	height: $height;	
+}

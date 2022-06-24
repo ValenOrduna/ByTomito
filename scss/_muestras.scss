@@ -1,0 +1,36 @@
+// -- ---EMPIEZA MUESTRAS-- --- //
+.muestras {
+	margin-top: 100px;
+	.muestra {
+		margin-top: 50px;
+		img{
+			height: 500px;
+			width: 90%;
+		}
+	}
+}
+
+
+.muestra-texto,.muestra-texto a {
+	width: 10%;
+	font-size: 25px;
+	font-style: italic;
+	color: $color-secundario;
+	text-decoration: none;
+	transform: rotate(90deg);
+}
+
+.muestra-texto1,.muestra-texto2 {
+	width: 120px;
+	transition: all 100ms ease;
+}
+
+.muestra-texto h3:hover {
+	border-bottom: 4px solid $color-secundario;
+}
+
+.muestra-texto2 {
+	transform: rotate(-180deg); 
+}
+
+// -- ---TERMINAMUESTRAS-- --- //

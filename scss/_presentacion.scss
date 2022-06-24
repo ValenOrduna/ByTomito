@@ -1,0 +1,50 @@
+// -- ---EMPIEZA PRESENTANCION-- --- //
+
+.presentacion {
+	img{
+		width: 100%;
+	}
+	.descripcion {
+		padding: 20px;
+		.titulo-descripcion {
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.parrafo-descripcion{
+			letter-spacing: 1px;
+			opacity: 0.95;
+			margin-top: 10px;
+		}
+		.compra-ahora {
+			margin-top: 30px;
+		}
+	}
+}
+
+.boton-compra{
+	@include boton-compra;
+	&:hover {
+		color: $color-secundario;
+		transform: translate(-0,05em, -0,05em);
+		box-shadow: 0.20em 0.15em;
+	}
+	&:active{
+		transform: translate(0.05em, 0.05em);
+		box-shadow: 0.05em 0.05em;
+	}
+}
+
+
+.bienvenido {
+	text-align: right;
+	margin-bottom: 100px;
+	margin-right: 20px;
+	margin-top: 25px;
+}
+
+.bienvenido-texto{
+	font-size: 65px;
+	font-family: $fuente-secundaria;
+}
+
+// -- ---TERMINA PRESENTANCION-- --- //

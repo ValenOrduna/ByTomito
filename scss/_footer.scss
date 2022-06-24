@@ -1,0 +1,30 @@
+/* -- ---EMPIEZA FOOTER-- --- */
+
+footer {
+	margin-bottom: 50px;
+	.footer-contenedor{
+		ul{
+	 		list-style: none;
+	        margin-top: 20px;
+			li {
+				margin-top: 20px;
+	            margin: 0 20px;
+	            padding: 10px;
+				a {
+					font-size: 18px;
+	                font-style: italic;
+	                color: $color-secundario;
+	                text-decoration: none;
+	                letter-spacing: 1px;
+	                opacity: 0.6;
+					&:hover {
+						border-bottom: 2px solid $color-secundario;
+	                    opacity: 0.6;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* -- ---TERMINA FOOTER-- --- */

@@ -1,0 +1,21 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+// -- ---EMPIEZA ESTILOS GENERALES-- --- //
+body {
+	color: $color-secundario;
+	font-family: $fuente;
+	&::-webkit-scrollbar{
+		width: 10px;
+	}
+	&::-webkit-scrollbar-thumb{
+		background-color: #a5afb3;
+	    border-radius: 4px;
+    }
+}
+
+// -- ---TERMINA ESTILOS GENERALES-- --- //
+

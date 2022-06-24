@@ -1,0 +1,46 @@
+// -- --- EMPIEZA PREFOOTER-- --- //
+.prefooter {
+	background: $color-principal;
+	@include sizes (100%,500px);
+	padding-left: 150px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	.prefooter-form {
+		.prefooter-texto{
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+		
+	}
+}
+
+
+.email{
+	@include sizes (400px,35px);
+	border: 1px solid $color-secundario;
+	outline: none;
+	padding: 0 0 0 16px;
+	font-size: 15px;
+	&:focus {
+		box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
+	}
+}
+
+.enviar {
+	@include sizes (80px,35px);
+	@include enviar;
+	&:hover {
+		box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0);
+	}
+}
+
+.prefooter-img {
+	margin-right: 200px;
+	img {
+		width: 400px;
+	    opacity: 0.93;
+	}
+
+}
+
+/* -- ---TERMINA PREFOOTER-- --- */

@@ -1,0 +1,311 @@
+/* -- ---EMPIEZAN MEDIA QUERYS-- --- */
+
+
+@media screen and (max-width: 1568px) {
+	.producto {
+		@include sizes (450px,550px);
+	}
+
+}
+
+@media screen and (max-width: 1493px){
+	.producto {
+		@include sizes (400px,500px);
+	}
+
+}
+
+@media screen and (max-width:1440px){
+	.agregar button {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.ult {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1227px) {
+	.submenu {
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 1167px) {
+	.submenu {
+		padding: 0px;
+	}
+	.navbar,.nav-link {
+		margin-left: 0px;
+	}
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.enviar {
+		margin-top: 10px;
+	}
+
+	.carousel-inner {
+		width: 70%;
+		img {
+			height: 800px;
+		}
+	}
+
+
+}
+
+@media screen and (max-width: 991px) {
+	.submenu {
+		display: $ocultar;
+	}
+	.prefooter-img {
+		display: $ocultar;
+	}
+	.home {
+		margin: 0 auto;
+	}
+	.dnav {
+		display: block;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.home {
+		margin: 0 auto;
+	}
+	.bienvenido-texto {
+		font-size: 55px;
+	}
+
+	.producto {
+		@include sizes (300px,400px);
+		border: 4px solid $color-principal;
+		.nombre,.precio {
+			font-size: 12px;
+			opacity: $mostrar;
+		}
+	}
+	.oferta {
+		opacity: $mostrar;
+	}
+	.off {
+		margin-top: 0px;
+		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+	}
+
+	.navbar-collapse {
+		width: 400px;
+	}	
+	.navbar-light .navbar-nav .nav-link {
+		font-size: 18px;
+	}
+	.navbar-nav .dropdown-menu {
+		width: 100%;
+	}
+
+	.email {
+		width: 300px;
+	}
+
+	.enviar {
+		width: 60px;
+	}
+	.mensaje {
+		width: 350px;	
+	}
+	.nomb,.telefono,.correo{
+		width: 350px;
+	}
+
+	.submit {
+		width: 65px;
+	}
+
+	.agregar{
+		button{
+			font-size: 14px;	
+		}
+	}
+
+	.carousel-inner {
+		img {
+			height: 600px;
+		}
+	}
+
+}
+@media screen and (max-width:600px){
+	.footer-contenedor {
+		flex-direction: column;
+
+	}
+	.footer-contenedor ul {
+		width: 100%;
+		text-align: start;
+	}
+	.footer-contenedor ul li  {
+		width: 80%;
+		display: block;
+	}
+}
+@media screen and (max-width: 556px) {
+	.prefooter {
+		padding-left: 50px;
+	}
+	.bienvenido-texto {
+		font-size: 45px;
+	}
+	.home {
+		width: 90px;
+	}
+	.email {
+		width: 250px;
+	}
+
+	.enviar {
+		width: 55px;
+	}
+	.mensaje {
+		width: 300px;	
+	}
+	.nomb,.telefono,.correo{
+		width: 300px;
+	}
+
+
+	.submit {
+		width: 60px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 425px) {
+	.home {
+		width: 80px;
+	}
+	.bienvenido-texto {
+		font-size: 40px;
+	}
+
+	.email {
+		width: 275px;
+	}
+
+	.enviar {
+		width: 60px;
+		margin-top: 0px;
+	}
+
+	.prefooter {
+		padding-left: 50px;
+	}
+
+	.muestras {
+		.muestra{
+			img{
+				height: 300px;
+			}
+		}
+	}
+
+	.muestra-texto {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.muestra-texto,.muestra-texto a {
+		width: 70%;
+		transform: rotate(0deg);
+		margin-top: 10px;
+	}
+	.muestra-texto2 {
+		transform: rotate(0deg); 
+	}
+	.carousel-item img {
+		height: 500px;
+	}
+
+	.carousel-inner {
+		img {
+			height: 400px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 375px) {
+	.muestras .muestra img {
+		height: 250px;
+	}
+	.footer-contenedor li {
+		padding: 5px;
+	}
+
+	.footer-contenedor a {
+		font-size: 16px;
+	}
+
+	.enviar {
+		margin-top: 10px;
+	}
+	.carousel-item {
+		width: 100%;
+		img {
+			height: 400px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+	.bienvenido-texto {
+		font-size: 35px;
+	}
+	.email {
+		width: 250px;
+	}
+
+	.producto {
+		@include sizes (240px,340px);
+	}
+
+	.prefooter {
+		padding-left: 20px;
+	}
+	.footer-contenedor {
+		margin-right: 50px;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.paginas-titulo .titulo-pagina {
+		font-size: 30px;
+	}
+	.carousel-item img {
+		height: 350px;
+	}
+	.agregar {
+		button {
+			font-size: 12px;	
+		}
+	}
+
+	.carousel-inner {
+		width: 100%;
+		img {
+			height: 400px;
+		}
+	}
+}
+
+// -- ---TERMINAN MEDIA QUERYS-- --- //

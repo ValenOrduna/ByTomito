@@ -1,0 +1,79 @@
+// -- ---EMPIEZA HEADER-- --- //
+header {
+	justify-content: map-get($header , dividir);
+	text-align: map-get($header , centro);
+	height: map-get($header , alto);
+	align-items: map-get($header , centro);
+}
+
+.submenu {
+	padding: 40px;
+	text-align: center;
+    li{
+        a{
+            &:hover {
+            color: $gris;
+		}
+        }
+    }
+}
+
+.nav-item {
+	margin-right: 20px;
+}
+
+.navbar,.nav-link {
+	margin-left: 20px;
+	color: $color-secundario;
+	height: 35px;
+}
+
+.navbar-light, .navbar-nav, .nav-link, .submenum,.dropdown-toggle{
+	color: $color-secundario;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 600;
+}
+.nav-link:focus {
+	color: $gris;	
+}
+.home {
+	width: 115px;
+    a{
+        position: relative;
+        top:30px;
+        img {
+            width: 100%;
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+
+.dropdown-menu {
+	@include sizes (300px,225px);
+	li {
+		margin-bottom: 10px;
+		margin-left: 6px;
+		.dropdown-item {
+			font-style: italic;
+			font-weight: 600;
+			&:hover {
+				background: $color-principal;
+				color: $color-secundario;
+				height: 35px;
+			}
+		}
+	}
+}
+
+.navbar-light, .navbar-nav, .nav-link, .submenum, .dropdown-toggle {
+	background: $blanco;
+}
+
+.dnav {
+	display: $ocultar;
+}
+
+
+// -- ---TERMINA HEADER-- --- //
